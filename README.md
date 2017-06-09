@@ -14,6 +14,12 @@
 > 
 > "redux": "^3.0.0"
 
+### run program
+
+npm install
+
+set NODE_ENV=production && npm run start:prod
+
 
 ### problems
 这个项目最初是在react-router的基础上建立的。使用react-router配合server render，项目运行正常。
