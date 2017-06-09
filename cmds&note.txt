@@ -1,0 +1,23 @@
+//2017.06.06
+
+//path
+cd /d E:\temp\react\lessons\sr13
+//commands
+set NODE_ENV=production && npm run start:prod
+
+更改说明
+1-这个样例将react及其他对应的模块都更新为了当前的最新版
+"react": "15.5.4",
+"react-dom": "15.5.4",
+"react-router": "^4.1.1",
+"react-router-dom": "^4.1.1",
+
+其实在最新版中，不要单独引入history，如果引入了，使用下面的版本
+"history": "^2.1.2"
+因为最新的react-router依赖的是这个低版本的history
+
+2-React.createClass全部使用React.Componen代理，消除warning
+
+问题：
+1-`onlyActiveOnIndex`, `activeClassName`还没有修改
+
